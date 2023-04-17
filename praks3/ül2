@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#muutujate loomine
+aasta="2016"
+president="Kersti Kaljulaid"
+lause=". aastal valiti Eesti presidendiks "
+#liidan muutujad lauseks
+vastus=$aasta$lause$president
+#
+echo $vastus
