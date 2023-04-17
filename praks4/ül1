@@ -1,0 +1,13 @@
+#!/bin/bash
+#paaris või paaritu arv skript
+echo -n "Sisesta täisarv:"
+read taisarv
+
+arv=$(($taisarv%2))
+
+if [ `expr $taisarv % 2` == 0 ]
+then
+echo "Antud arv on paarisarv"
+else
+echo "Antud arv on paarituarv"
+fi
