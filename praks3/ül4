@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#bussi scrpt
+
+#
+echo  "Sisesta mitu resisijat läheb exkursioonile: " #
+read  rarv
+echo "siseta mitu kohta on bussis:"
+read bkarv
+mahutavus=`expr $rarv / $bkarv `
+echo $mahutavus
+
+puudujaak=`expr  $rarv - $mahutavus \* $bkarv`
+echo maha jäävad $puudujaak
