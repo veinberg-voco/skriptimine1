@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo -n "Sisestage ainepunktid({EAP) arv: "
+read arvp
+echo -n "Sisestage nädalate arv:"
+read arvn
+
+eap=$(($arvp * 26))
+aeg=$(($eap / $arvn))
+
+echo "$aeg"
