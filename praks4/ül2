@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#bussi script
+
+#
+echo  "Sisesta mitu resisijat läheb exkursioonile: " 
+read  rarv
+echo "siseta mitu kohta on bussis:"
+read bkarv
+bussid=`expr $rarv / $bkarv `
+puudujaak=`expr  $rarv - $bussid \* $bkarv`
+if  [ $puudujaak -ne 0 ]
+then
+bussid=$(($bussid + 1))
+echo "Kokku on vaja $bussid bussi."
+else
+echo "Kokku on vaja $bussid täisbussi."
+fi
