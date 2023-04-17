@@ -1,0 +1,5 @@
+#!/bin/bash
+#küsi kasutajalt tema nime
+echo -n "Siseta oma ees- ja perekonnanimi:" 
+read varname
+echo "Tere tulemast $varname!"
